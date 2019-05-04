@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Workspace extends React.Component {
+class TabBoard extends React.Component {
   render () {
     return (
       <div
@@ -13,9 +13,19 @@ class Workspace extends React.Component {
           margin: '3px',
           boxShadow: `${this.props.shadow || 'black'} -2px 5px 5px`
         }}
-      >{this.props.children}</div>
+      >
+        <button
+          style={{
+            backgroundColor: '#0B0',
+            border: '0px #0A0 solid',
+            borderRadius: '15px',
+            height: '30px',
+            width: '100px',
+          }}
+        >asdf</button>
+      </div>
     )
   }
 }
 
-export default Workspace
+export default TabBoard
